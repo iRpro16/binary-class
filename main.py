@@ -49,7 +49,7 @@ model = Sequential([
     Conv2D(16, (3,3), 1, activation='relu', kernel_regularizer=L2(0.01)),
     MaxPooling2D(),
     Flatten(),
-    Dense(256, activation='relu', kernel_regularizer=L2(0.1)),
+    Dense(256, activation='relu', kernel_regularizer=L2(0.01)),
     Dense(1, activation='sigmoid')
 ])
 

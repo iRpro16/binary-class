@@ -1,0 +1,10 @@
+What I learned from image classification project:
+
+1. Load data set using TensorFlow, which automatically detects file size and amount of classes.
+2. Each image has following dimensions:
+    (height, width, channel for colors)
+    Where 3 = RGB and 1 = grayscale
+3. TensorFlow then seperates the data into batches depending on number of training examples
+4. Then scale the dataset for values between 0 and 1
+5. TensorFlow automatically sets batch size to 32, and rescales image to (256, 256)
+6. You can store the history and record the loss functions
